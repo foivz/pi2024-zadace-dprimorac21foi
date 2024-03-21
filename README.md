@@ -8,9 +8,7 @@ Dino Primorac | dprimorac21@foi.hr | 0016155919 | dprimorac21foi
 
 
 ## Opis domene
-
-Domena projekta pokriva stvaranje sustava za svrhe korištenja gradskog prijevoza (autobusa) sugrađana. Sustav je namijenjen za upotrebu od strane zaposlenih te korisnika autobusa. Digitalizacija procesa za zaposlenike treba omogućiti definiranje voznog reda i voznih linija, što treba popratiti prikladan prikaz istih te približno točan prikaz trenutne lokacije autobusa. Za korisnike javnog prijevoza se očekuje implementacija kupovanja karti na kiosku, brze i točne informacije o vremenu dolaska autobusa i njihovih destinacija te uvođenje uređaja za samostalno očitavanje karti tijekom ulaska u autobus.
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
+Projekt pokriva stvaranje sustava za svrhe korištenja gradskog prijevoza tj. autobusa. Sustav je namijenjen za upotrebu od strane zaposlenih te korisnika prijevoza. Digitalizacija procesa za zaposlenike treba omogućiti definiranje voznog reda i voznih linija, što treba popratiti prikladnim prikazom istih te približno točne trenutne lokacije autobusa. Za korisnike javnog prijevoza se očekuje implementacija kupovanja karti na kiosku, brze i točne informacije o vremenu dolaska autobusa i njihovih destinacija te uvođenje podsustava za samostalno očitavanje karti tijekom ulaska u autobus.
 
 ## Specifikacija projekta
 (Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
