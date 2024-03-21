@@ -1,12 +1,10 @@
-# Naziv projekta
-(U redak iznad navedite naziv projekta koji ste dobili za analizu!)
+# Gradski prijevoz
 
 ## Podaci o studentu
-(Ispod promijenite samo drugi redak tablice!)
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
+Dino Primorac | dprimorac21@foi.hr | 0016155919 | dprimorac21foi
 
 
 ## Opis domene
