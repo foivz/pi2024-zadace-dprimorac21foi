@@ -8,6 +8,7 @@ Dino Primorac | dprimorac21@foi.hr | 0016155919 | dprimorac21foi
 
 
 ## Opis domene
+
 (Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
 
 ## Specifikacija projekta
