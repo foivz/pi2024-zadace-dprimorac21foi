@@ -21,16 +21,17 @@ Broj linije | Vozač linije | Stanice na liniji  | Očekivano vrijeme dolaska | 
 ## 3. Specifikacija projekta  
 Oznaka funckije | Naziv | Opis 
 ------------  | ------------------- | ----- 
-F1| Sustav će omogućiti prijavu autoriziranim korisnicima | Putnici ili zaposlenici koji su već prije stvorili račun će moći pristupiti aplikaciji
+F1| Sustav će omogućiti zaposlenicima stvaranje voznog reda | Zaposlenici koji planiraju vozne linije i redove će imati mogućnost stvarati nove vozne redove
 F2| Sustav će omogućiti zaposlenicima stvaranje novih voznih linija | Zaposlenici će moći stvarati nove linije
 F3|  Sustav će omogućiti korisnicima praćenje trenutne lokacije autobusa pomoću GPS sustava | Svaki autobus će imati mogućnost praćenja pomoću GPS-a
 F4| Sustav će omogućiti putnicima skeniranje karte pomoću čitača | Svaki putnik će imati mogućnost skeniranja svoje karte na čitaču karata
-F5|  Stvaranje izvještaja | Sustav će omogućiti izradu dnevnog izvještaja o broju putnika koji su putovali određenim autobusom
+F5|  Sustav će omogućiti izradu dnevnog izvještaja o broju putnika koji su putovali određenim autobusom | Zaposlenici će imati opciju uvida u dnevnje izvještaje o broju putnika koji su koristili neki autobus
 F6 | Sustav će omogućiti korisnicima uvid u potrebne podatke za odabrane linije | Svaki putnik može pogledati detalje za neku određenu liniju
 F7|  Sustav će omogućiti grafički prikaz na karti stvorenih linija | Svaki putnik se može prijaviti te pomoću grafičkog sučelja vidjeti prikaz svih aktivnih linija
 F8 | Sustav će omogućiti brisanje određenih voznih linija  | Sustav omogućuje zaposleniku kada se prijavi na sustav da obriše pojedinu liniju
-F9 | Sustav će omogućiti digitalni prikaz voznog reda na autobusnim stanicama | Sustav će biti integriran na zaslone na svakoj stanici tako da putnik ne mora upaliti aplikaciju da vidi neke osnovne informacije o liniji
-F10 | Sustav će omogućiti registraciju putnika | Svaki putnik se može registrirati pomoću sustava
+F9 | Sustav će omogućiti digitalni prikaz voznog reda na autobusnim stanicama | Sustav će biti integriran na zaslone na svakoj stanici tako da putnik ima uvid u linije koje prolaze autobusnom stanicom na kojoj se nalazi
+F10 | Sustav će omogućiti brisanje voznog reda | Sustav briše vozni red zajedno sa svim linijama koje su u tom voznom redu
+F11 | Sustav će omogućiti ažuriranje voznih redova | Mogućnost dodavanja i brisanja voznih linija u voznim redovima
 
 ## 4. Zadatak
 https://github.com/foivz/pi2024-zadace-dprimorac21foi/blob/master/Documentation/ZadatakGradskiPrijevoz.pdf
