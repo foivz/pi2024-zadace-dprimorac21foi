@@ -13,9 +13,9 @@ rojekt pokriva stvaranje sustava za svrhe korištenja gradskog prijevoza tj. aut
 
 Izgled jedne autobusne linije
 <br>
-Broj linije | Vozač linije | Stanice na liniji  | Očekivano vrijeme dolaska | Očekivano kašnjenje | Ocijena linije |  
-------------  | ---------- | ------------------ | ------------------------- | ------------------- | -------------- | 
-1 | Karlo Karlić | Hrašćica - Bolnica - Fabijanska | 12:00 - 12:15 - 12:30 | 7 min | 4.2 / 5 | 
+Broj linije | Vozač linije | Stanice na liniji  | Očekivano vrijeme dolaska | Očekivano kašnjenje | 
+------------  | ---------- | ------------------ | ------------------------- | ------------------- | 
+1 | Karlo Karlić | Hrašćica - Bolnica - Fabijanska | 12:00 - 12:15 - 12:30 | 7 min |  
 <br>
 
 ## 3. Specifikacija projekta  
