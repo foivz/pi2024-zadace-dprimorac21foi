@@ -1,6 +1,6 @@
 # Podaci za prijavu u 3. zadaću
-  Username | Dino
-  Lozinka | Foi
+  Username | Dino |
+  Lozinka | Foi |
 
 
 # Sustav upravljanja gradskim prijevozom putnika (BusWay)
