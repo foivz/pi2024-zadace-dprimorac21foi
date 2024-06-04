@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace BusWay.Models
 {
-    internal class VoznaLinija
+    public class VoznaLinija
     {
         public int Id { get; set; }
         public string Odrediste { get; set; }
         public string Polaziste { get; set; }
         public DateTime VrijemePolaska = new DateTime();
-
+        public DateTime VrijemeDolaska = new DateTime();
 
     }
 }
