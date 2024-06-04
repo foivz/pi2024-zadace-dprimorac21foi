@@ -101,7 +101,7 @@
             this.Controls.Add(this.txtLozinka);
             this.Controls.Add(this.txtKorisnickoIme);
             this.Name = "FrmPrijava";
-            this.Text = "Form1";
+            this.Text = "Prijava";
             this.Load += new System.EventHandler(this.FrmPrijava_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
