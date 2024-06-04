@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DBLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace BusWay
         public FrmPrijava()
         {
             InitializeComponent();
+            DB.SetConfiguration("PI2324_dprimorac21_DB", "PI2324_dprimorac21_User", "N:=yp!NO");
         }
         string korIme = "Dino";
         string lozinka = "Foi";
@@ -36,8 +38,12 @@ namespace BusWay
             {
                 if (txtKorisnickoIme.Text == korIme && txtLozinka.Text == lozinka)
                 {
-                    MessageBox.Show("Dobrodošli!", "Prijavljeni ste",
+                    this.Hide();
+                    FrmVoznaLinija FormVoznaLinija = new FrmVoznaLinija();
+                    MessageBox.Show("Uspješna Prijava!", "Dobrodošli!",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FormVoznaLinija.ShowDialog();
+
                 }
                 else
                 {
@@ -54,6 +60,11 @@ namespace BusWay
         }
 
         private void FrmPrijava_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

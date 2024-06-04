@@ -78,6 +78,7 @@
             this.label3.Size = new System.Drawing.Size(341, 108);
             this.label3.TabIndex = 4;
             this.label3.Text = "BusWay";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnPrijava
             // 
@@ -93,7 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(726, 516);
+            this.ClientSize = new System.Drawing.Size(733, 516);
             this.Controls.Add(this.btnPrijava);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
