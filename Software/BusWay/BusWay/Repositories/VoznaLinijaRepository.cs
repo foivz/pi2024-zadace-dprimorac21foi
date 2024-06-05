@@ -4,8 +4,10 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using BusWay.Models;
 using DBLayer;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace BusWay.Repositories
 {
@@ -28,11 +30,11 @@ namespace BusWay.Repositories
             return voznaLinija;
         }
 
-        public static List<VoznaLinija> GetVoznaLinija()
+        public static List<VoznaLinija> GetVozneLinije()
         {
             List<VoznaLinija> vozneLinije = new List<VoznaLinija>();
 
-            string sql = "SELECT * FROM VoznaLinija";
+            string sql = $"SELECT * FROM VozneLinije";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
 

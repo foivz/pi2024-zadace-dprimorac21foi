@@ -11,8 +11,8 @@ namespace BusWay.Models
         public int Id { get; set; }
         public string Odrediste { get; set; }
         public string Polaziste { get; set; }
-        public DateTime VrijemePolaska = new DateTime();
-        public DateTime VrijemeDolaska = new DateTime();
+        public DateTime VrijemePolaska { get; set; }
+        public DateTime VrijemeDolaska { get; set; }
 
     }
 }

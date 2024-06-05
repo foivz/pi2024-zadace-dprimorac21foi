@@ -19,8 +19,8 @@ namespace BusWay
             InitializeComponent();
             DB.SetConfiguration("PI2324_dprimorac21_DB", "PI2324_dprimorac21_User", "N:=yp!NO");
         }
-        string korIme = "Dino";
-        string lozinka = "Foi";
+        string korIme = "D";
+        string lozinka = "D";
 
         private void btnPrijava_Click(object sender, EventArgs e)
         {
