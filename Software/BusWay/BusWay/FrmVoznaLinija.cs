@@ -51,5 +51,10 @@ namespace BusWay
             VoznaLinijaRepository.ObrisiVoznuLiniju(voznaLinija);
             ShowVozneLinije();
         }
+
+        private void btnPrikaziSveLinije_Click(object sender, EventArgs e)
+        {
+            ShowVozneLinije();
+        }
     }
 }
