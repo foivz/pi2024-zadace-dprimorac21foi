@@ -49,13 +49,13 @@ namespace BusWay.Repositories
 
         }
 
-        private static VoznaLinija CreateObject(SqlDataReader reader)
+        public static VoznaLinija CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["Id"].ToString());
             string odrediste = reader["Odrediste"].ToString();
             string polaziste = reader["Polaziste"].ToString();
-            DateTime vrijemePolaska = DateTime.Parse(reader["VrijemePolaska"].ToString());
-            DateTime vrijemeDolaska = DateTime.Parse(reader["VrijemeDolaska"].ToString());
+            string vrijemePolaska = reader["VrijemePolaska"].ToString();
+            string vrijemeDolaska = reader["VrijemeDolaska"].ToString();
 
             var voznalinija = new VoznaLinija
             {
@@ -67,6 +67,14 @@ namespace BusWay.Repositories
             };
             return voznalinija;
             
+        }
+
+        public static void KreirajVoznuLiniju (VoznaLinija linija)
+        {
+            string sql = $"INSERT INTO VozneLinije (Id, Odrediste, Polaziste, VrijemePolaska, VrijemeDolaska) VALUES ({linija.Id}, '{linija.Odrediste}', '{linija.Polaziste}', '{linija.VrijemePolaska}', '{linija.VrijemePolaska}')";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
         }
 
     }

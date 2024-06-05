@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusWay.Models;
+using BusWay.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,12 +26,27 @@ namespace BusWay
 
         private void btnDodajLiniju_Click(object sender, EventArgs e)
         {
-            if (txtId.Text == "" && txtOdrediste.Text == "" && txtPolaziste.Text == "")
+            if (string.IsNullOrEmpty(txtId.Text) || string.IsNullOrEmpty(txtOdrediste.Text) || string.IsNullOrEmpty(txtPolaziste.Text))
             {
                 MessageBox.Show("Niste unijeli sve podatke!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } else
+            }
+            else
             {
+                int id = int.Parse(txtId.Text);
+                VoznaLinija novaVoznaLinija = new VoznaLinija()
+                {
+                    Id = id,
+                    Odrediste = txtOdrediste.Text,
+                    Polaziste = txtPolaziste.Text,
+                    VrijemeDolaska = txtVrijemeDolaska.Text,
+                    VrijemePolaska = txtVrijemePolaska.Text,
+                };
 
+                VoznaLinijaRepository voznaLinijaRepo = new VoznaLinijaRepository();
+                VoznaLinijaRepository.KreirajVoznuLiniju(novaVoznaLinija);
+
+                MessageBox.Show("Nova vozna linija kreirana!", "Kreirana linija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
             }
         }
 

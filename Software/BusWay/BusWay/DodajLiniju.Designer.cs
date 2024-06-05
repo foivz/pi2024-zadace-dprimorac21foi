@@ -35,11 +35,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtPolaziste = new System.Windows.Forms.TextBox();
-            this.datVrijemePolaska = new System.Windows.Forms.DateTimePicker();
-            this.datVrijemeDolaska = new System.Windows.Forms.DateTimePicker();
             this.txtOdrediste = new System.Windows.Forms.TextBox();
             this.btnDodajLiniju = new System.Windows.Forms.Button();
             this.btnOdustani = new System.Windows.Forms.Button();
+            this.txtVrijemePolaska = new System.Windows.Forms.TextBox();
+            this.txtVrijemeDolaska = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -101,20 +101,6 @@
             this.txtPolaziste.Size = new System.Drawing.Size(202, 22);
             this.txtPolaziste.TabIndex = 6;
             // 
-            // datVrijemePolaska
-            // 
-            this.datVrijemePolaska.Location = new System.Drawing.Point(347, 302);
-            this.datVrijemePolaska.Name = "datVrijemePolaska";
-            this.datVrijemePolaska.Size = new System.Drawing.Size(200, 22);
-            this.datVrijemePolaska.TabIndex = 8;
-            // 
-            // datVrijemeDolaska
-            // 
-            this.datVrijemeDolaska.Location = new System.Drawing.Point(345, 354);
-            this.datVrijemeDolaska.Name = "datVrijemeDolaska";
-            this.datVrijemeDolaska.Size = new System.Drawing.Size(202, 22);
-            this.datVrijemeDolaska.TabIndex = 9;
-            // 
             // txtOdrediste
             // 
             this.txtOdrediste.Location = new System.Drawing.Point(347, 248);
@@ -142,16 +128,30 @@
             this.btnOdustani.UseVisualStyleBackColor = true;
             this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
+            // txtVrijemePolaska
+            // 
+            this.txtVrijemePolaska.Location = new System.Drawing.Point(345, 307);
+            this.txtVrijemePolaska.Name = "txtVrijemePolaska";
+            this.txtVrijemePolaska.Size = new System.Drawing.Size(200, 22);
+            this.txtVrijemePolaska.TabIndex = 13;
+            // 
+            // txtVrijemeDolaska
+            // 
+            this.txtVrijemeDolaska.Location = new System.Drawing.Point(345, 360);
+            this.txtVrijemeDolaska.Name = "txtVrijemeDolaska";
+            this.txtVrijemeDolaska.Size = new System.Drawing.Size(200, 22);
+            this.txtVrijemeDolaska.TabIndex = 14;
+            // 
             // FrmDodajLiniju
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 539);
+            this.Controls.Add(this.txtVrijemeDolaska);
+            this.Controls.Add(this.txtVrijemePolaska);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodajLiniju);
             this.Controls.Add(this.txtOdrediste);
-            this.Controls.Add(this.datVrijemeDolaska);
-            this.Controls.Add(this.datVrijemePolaska);
             this.Controls.Add(this.txtPolaziste);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label5);
@@ -176,10 +176,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtPolaziste;
-        private System.Windows.Forms.DateTimePicker datVrijemePolaska;
-        private System.Windows.Forms.DateTimePicker datVrijemeDolaska;
         private System.Windows.Forms.TextBox txtOdrediste;
         private System.Windows.Forms.Button btnDodajLiniju;
         private System.Windows.Forms.Button btnOdustani;
+        private System.Windows.Forms.TextBox txtVrijemePolaska;
+        private System.Windows.Forms.TextBox txtVrijemeDolaska;
     }
 }

@@ -37,6 +37,7 @@ namespace BusWay
         {
             FrmDodajLiniju FormDodajLiniju = new FrmDodajLiniju();
             FormDodajLiniju.ShowDialog();
+            ShowVozneLinije();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
