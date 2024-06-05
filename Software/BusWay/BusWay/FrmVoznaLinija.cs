@@ -44,5 +44,12 @@ namespace BusWay
         {
            
         }
+
+        private void btnObrisi_Click(object sender, EventArgs e)
+        {
+            var voznaLinija = dgvVozneLinije.CurrentRow.DataBoundItem as VoznaLinija;
+            VoznaLinijaRepository.ObrisiVoznuLiniju(voznaLinija);
+            ShowVozneLinije();
+        }
     }
 }

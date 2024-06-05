@@ -31,8 +31,9 @@
             this.dgvVozneLinije = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.btnDodaj = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnObrisi = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVozneLinije)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,14 +67,15 @@
             this.btnDodaj.UseVisualStyleBackColor = true;
             this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
-            // button3
+            // btnObrisi
             // 
-            this.button3.Location = new System.Drawing.Point(859, 720);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(98, 53);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnObrisi.Location = new System.Drawing.Point(859, 720);
+            this.btnObrisi.Name = "btnObrisi";
+            this.btnObrisi.Size = new System.Drawing.Size(98, 53);
+            this.btnObrisi.TabIndex = 3;
+            this.btnObrisi.Text = "Obriši liniju";
+            this.btnObrisi.UseVisualStyleBackColor = true;
+            this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
             // label3
             // 
@@ -85,13 +87,23 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "BusWay";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(30, 720);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 53);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // FrmVoznaLinija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 915);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvVozneLinije);
@@ -109,7 +121,8 @@
         private System.Windows.Forms.DataGridView dgvVozneLinije;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDodaj;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnObrisi;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
     }
 }

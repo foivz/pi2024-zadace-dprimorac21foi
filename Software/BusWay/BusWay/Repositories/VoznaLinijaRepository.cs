@@ -77,5 +77,13 @@ namespace BusWay.Repositories
             DB.CloseConnection();
         }
 
+        public static void ObrisiVoznuLiniju(VoznaLinija linija)
+        {
+            string sql = $"DELETE FROM VozneLinije WHERE Id = {linija.Id}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
     }
 }
