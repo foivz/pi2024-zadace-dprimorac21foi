@@ -44,7 +44,7 @@
             // dgvVozneLinije
             // 
             this.dgvVozneLinije.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvVozneLinije.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvVozneLinije.BackgroundColor = System.Drawing.SystemColors.ScrollBar;
             this.dgvVozneLinije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVozneLinije.Location = new System.Drawing.Point(30, 147);
             this.dgvVozneLinije.Name = "dgvVozneLinije";
@@ -57,7 +57,7 @@
             // brnPromjeni
             // 
             this.brnPromjeni.BackColor = System.Drawing.Color.LightBlue;
-            this.brnPromjeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.brnPromjeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.brnPromjeni.Location = new System.Drawing.Point(762, 723);
             this.brnPromjeni.Name = "brnPromjeni";
             this.brnPromjeni.Size = new System.Drawing.Size(156, 53);
@@ -69,7 +69,7 @@
             // btnDodaj
             // 
             this.btnDodaj.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.btnDodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.btnDodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnDodaj.Location = new System.Drawing.Point(924, 723);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(161, 53);
@@ -81,7 +81,7 @@
             // btnObrisi
             // 
             this.btnObrisi.BackColor = System.Drawing.Color.LightCoral;
-            this.btnObrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.btnObrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnObrisi.Location = new System.Drawing.Point(595, 723);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(161, 53);
@@ -103,10 +103,10 @@
             // btnPrikaziSveLinije
             // 
             this.btnPrikaziSveLinije.BackColor = System.Drawing.Color.OldLace;
-            this.btnPrikaziSveLinije.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.btnPrikaziSveLinije.Location = new System.Drawing.Point(924, 92);
+            this.btnPrikaziSveLinije.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPrikaziSveLinije.Location = new System.Drawing.Point(893, 92);
             this.btnPrikaziSveLinije.Name = "btnPrikaziSveLinije";
-            this.btnPrikaziSveLinije.Size = new System.Drawing.Size(154, 40);
+            this.btnPrikaziSveLinije.Size = new System.Drawing.Size(185, 40);
             this.btnPrikaziSveLinije.TabIndex = 7;
             this.btnPrikaziSveLinije.Text = "Prikaži sve linije";
             this.btnPrikaziSveLinije.UseVisualStyleBackColor = false;
@@ -140,9 +140,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BusWay.Properties.Resources.busek_slika;
-            this.pictureBox1.Location = new System.Drawing.Point(346, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(364, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 117);
+            this.pictureBox1.Size = new System.Drawing.Size(109, 117);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -151,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(1108, 784);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
