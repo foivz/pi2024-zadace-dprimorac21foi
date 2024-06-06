@@ -33,8 +33,9 @@
             this.btnDodaj = new System.Windows.Forms.Button();
             this.btnObrisi = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnPrikaziSveLinije = new System.Windows.Forms.Button();
+            this.cboxPolaziste = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVozneLinije)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,15 +89,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "BusWay";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(30, 720);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 53);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // btnPrikaziSveLinije
             // 
             this.btnPrikaziSveLinije.Location = new System.Drawing.Point(924, 92);
@@ -107,13 +99,38 @@
             this.btnPrikaziSveLinije.UseVisualStyleBackColor = true;
             this.btnPrikaziSveLinije.Click += new System.EventHandler(this.btnPrikaziSveLinije_Click);
             // 
+            // cboxPolaziste
+            // 
+            this.cboxPolaziste.FormattingEnabled = true;
+            this.cboxPolaziste.Items.AddRange(new object[] {
+            "Varaždin",
+            "Donji Kneginec",
+            "Gojanec",
+            "Zbelava",
+            ""});
+            this.cboxPolaziste.Location = new System.Drawing.Point(164, 735);
+            this.cboxPolaziste.Name = "cboxPolaziste";
+            this.cboxPolaziste.Size = new System.Drawing.Size(194, 24);
+            this.cboxPolaziste.TabIndex = 8;
+            this.cboxPolaziste.SelectedIndexChanged += new System.EventHandler(this.cboxPolaziste_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 738);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 16);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Filtriraj po polazištu";
+            // 
             // FrmVoznaLinija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 915);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cboxPolaziste);
             this.Controls.Add(this.btnPrikaziSveLinije);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.btnDodaj);
@@ -135,7 +152,8 @@
         private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.Button btnObrisi;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnPrikaziSveLinije;
+        private System.Windows.Forms.ComboBox cboxPolaziste;
+        private System.Windows.Forms.Label label1;
     }
 }
