@@ -25,6 +25,7 @@ namespace BusWay
         private void FrmVoznaLinija_Load(object sender, EventArgs e)
         {
             ShowVozneLinije();
+            dgvVozneLinije.Columns[0].ReadOnly = true;
         }
 
         private void ShowVozneLinije()
@@ -75,8 +76,8 @@ namespace BusWay
 
         private void brnPromjeni_Click(object sender, EventArgs e)
         {
-            //var voznaLinija = dgvVozneLinije.CurrentRow.DataBoundItem as VoznaLinija;
-            //VoznaLinijaRepository.AzurirajLiniju(voznaLinija);
+            var voznaLinija = dgvVozneLinije.CurrentRow.DataBoundItem as VoznaLinija;
+            //VoznaLinijaRepository.AzurirajVoznuLiniju(voznaLinija);
         }
     }
 }

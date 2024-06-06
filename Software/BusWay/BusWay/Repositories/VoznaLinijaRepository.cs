@@ -104,5 +104,10 @@ namespace BusWay.Repositories
             return vozneLinijePolaziste;
         }
 
+        public static void AzurirajVoznuLiniju(VoznaLinija linija)
+        {
+            
+        }
+
     }
 }
