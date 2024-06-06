@@ -19,7 +19,13 @@ namespace BusWay
             InitializeComponent();
 
             this.dgvVozneLinije.CellContentClick += new DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            List <string> polazista = VoznaLinijaRepository.GetUniquePolazista();
+            FiltriranjePolazista();
+        }
+
+        public void FiltriranjePolazista()
+        {
+            cboxPolaziste.Items.Clear();
+            List<string> polazista = VoznaLinijaRepository.GetUniquePolazista();
             for (int i = 0; i < polazista.Count; i++)
             {
                 cboxPolaziste.Items.Add(polazista[i]);
@@ -44,6 +50,7 @@ namespace BusWay
             FrmDodajLiniju FormDodajLiniju = new FrmDodajLiniju();
             FormDodajLiniju.ShowDialog();
             ShowVozneLinije();
+            FiltriranjePolazista();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -56,6 +63,8 @@ namespace BusWay
             var voznaLinija = dgvVozneLinije.CurrentRow.DataBoundItem as VoznaLinija;
             VoznaLinijaRepository.ObrisiVoznuLiniju(voznaLinija);
             ShowVozneLinije();
+            FiltriranjePolazista();
+
         }
 
         private void btnPrikaziSveLinije_Click(object sender, EventArgs e)
@@ -84,6 +93,7 @@ namespace BusWay
             var voznaLinija = dgvVozneLinije.CurrentRow.DataBoundItem as VoznaLinija;
             VoznaLinijaRepository.AzurirajVoznuLiniju(voznaLinija);
             ShowVozneLinije();
+            FiltriranjePolazista();
         }
     }
 }
