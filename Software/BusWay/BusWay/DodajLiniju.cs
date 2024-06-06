@@ -26,11 +26,13 @@ namespace BusWay
 
         private void btnDodajLiniju_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtId.Text) || string.IsNullOrEmpty(txtOdrediste.Text) || string.IsNullOrEmpty(txtPolaziste.Text))
+            if (string.IsNullOrEmpty(txtId.Text) || string.IsNullOrEmpty(txtOdrediste.Text) || string.IsNullOrEmpty(txtPolaziste.Text) ||
+                string.IsNullOrEmpty(cboxMinuteVrijemePolaska.Text) || string.IsNullOrEmpty(cboxMinuteVrijemeDolaska.Text) || 
+                string.IsNullOrEmpty(cboxSatiVrijemeDolaska.Text) ||
+                string.IsNullOrEmpty(cboxSatiVrijemePolaska.Text))
             {
                 MessageBox.Show("Niste unijeli sve podatke!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
+            } else
             {
                 int id = int.Parse(txtId.Text);
                 VoznaLinija novaVoznaLinija = new VoznaLinija()
@@ -38,8 +40,8 @@ namespace BusWay
                     Id = id,
                     Odrediste = txtOdrediste.Text,
                     Polaziste = txtPolaziste.Text,
-                    VrijemeDolaska = txtVrijemeDolaska.Text,
-                    VrijemePolaska = txtVrijemePolaska.Text,
+                    VrijemeDolaska = cboxSatiVrijemeDolaska.Text + ":" + cboxMinuteVrijemeDolaska.Text,
+                    VrijemePolaska = cboxSatiVrijemePolaska.Text + ":" + cboxMinuteVrijemeDolaska.Text,
                 };
 
                 VoznaLinijaRepository voznaLinijaRepo = new VoznaLinijaRepository();

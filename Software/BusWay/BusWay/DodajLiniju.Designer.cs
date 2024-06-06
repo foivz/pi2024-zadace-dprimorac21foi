@@ -38,52 +38,59 @@
             this.txtOdrediste = new System.Windows.Forms.TextBox();
             this.btnDodajLiniju = new System.Windows.Forms.Button();
             this.btnOdustani = new System.Windows.Forms.Button();
-            this.txtVrijemePolaska = new System.Windows.Forms.TextBox();
-            this.txtVrijemeDolaska = new System.Windows.Forms.TextBox();
+            this.cboxSatiVrijemePolaska = new System.Windows.Forms.ComboBox();
+            this.cboxMinuteVrijemePolaska = new System.Windows.Forms.ComboBox();
+            this.cboxSatiVrijemeDolaska = new System.Windows.Forms.ComboBox();
+            this.cboxMinuteVrijemeDolaska = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label1.Location = new System.Drawing.Point(169, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 16);
+            this.label1.Size = new System.Drawing.Size(24, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Id";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label2.Location = new System.Drawing.Point(169, 197);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 16);
+            this.label2.Size = new System.Drawing.Size(82, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Polaziste";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label3.Location = new System.Drawing.Point(169, 255);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 16);
+            this.label3.Size = new System.Drawing.Size(88, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Odrediste";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label4.Location = new System.Drawing.Point(169, 307);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 16);
+            this.label4.Size = new System.Drawing.Size(139, 22);
             this.label4.TabIndex = 3;
             this.label4.Text = "Vrijeme Polaska";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label5.Location = new System.Drawing.Point(169, 360);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 16);
+            this.label5.Size = new System.Drawing.Size(140, 22);
             this.label5.TabIndex = 4;
             this.label5.Text = "Vrijeme Dolaska";
             // 
@@ -110,9 +117,10 @@
             // 
             // btnDodajLiniju
             // 
-            this.btnDodajLiniju.Location = new System.Drawing.Point(453, 420);
+            this.btnDodajLiniju.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.btnDodajLiniju.Location = new System.Drawing.Point(468, 420);
             this.btnDodajLiniju.Name = "btnDodajLiniju";
-            this.btnDodajLiniju.Size = new System.Drawing.Size(94, 23);
+            this.btnDodajLiniju.Size = new System.Drawing.Size(113, 35);
             this.btnDodajLiniju.TabIndex = 11;
             this.btnDodajLiniju.Text = "Dodaj";
             this.btnDodajLiniju.UseVisualStyleBackColor = true;
@@ -120,35 +128,228 @@
             // 
             // btnOdustani
             // 
-            this.btnOdustani.Location = new System.Drawing.Point(345, 420);
+            this.btnOdustani.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.btnOdustani.Location = new System.Drawing.Point(321, 420);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(82, 23);
+            this.btnOdustani.Size = new System.Drawing.Size(108, 35);
             this.btnOdustani.TabIndex = 12;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
             this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
-            // txtVrijemePolaska
+            // cboxSatiVrijemePolaska
             // 
-            this.txtVrijemePolaska.Location = new System.Drawing.Point(345, 307);
-            this.txtVrijemePolaska.Name = "txtVrijemePolaska";
-            this.txtVrijemePolaska.Size = new System.Drawing.Size(200, 22);
-            this.txtVrijemePolaska.TabIndex = 13;
+            this.cboxSatiVrijemePolaska.FormattingEnabled = true;
+            this.cboxSatiVrijemePolaska.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.cboxSatiVrijemePolaska.Location = new System.Drawing.Point(347, 299);
+            this.cboxSatiVrijemePolaska.Name = "cboxSatiVrijemePolaska";
+            this.cboxSatiVrijemePolaska.Size = new System.Drawing.Size(80, 24);
+            this.cboxSatiVrijemePolaska.TabIndex = 15;
             // 
-            // txtVrijemeDolaska
+            // cboxMinuteVrijemePolaska
             // 
-            this.txtVrijemeDolaska.Location = new System.Drawing.Point(345, 360);
-            this.txtVrijemeDolaska.Name = "txtVrijemeDolaska";
-            this.txtVrijemeDolaska.Size = new System.Drawing.Size(200, 22);
-            this.txtVrijemeDolaska.TabIndex = 14;
+            this.cboxMinuteVrijemePolaska.FormattingEnabled = true;
+            this.cboxMinuteVrijemePolaska.Items.AddRange(new object[] {
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.cboxMinuteVrijemePolaska.Location = new System.Drawing.Point(468, 299);
+            this.cboxMinuteVrijemePolaska.Name = "cboxMinuteVrijemePolaska";
+            this.cboxMinuteVrijemePolaska.Size = new System.Drawing.Size(79, 24);
+            this.cboxMinuteVrijemePolaska.TabIndex = 16;
+            // 
+            // cboxSatiVrijemeDolaska
+            // 
+            this.cboxSatiVrijemeDolaska.FormattingEnabled = true;
+            this.cboxSatiVrijemeDolaska.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.cboxSatiVrijemeDolaska.Location = new System.Drawing.Point(347, 352);
+            this.cboxSatiVrijemeDolaska.Name = "cboxSatiVrijemeDolaska";
+            this.cboxSatiVrijemeDolaska.Size = new System.Drawing.Size(80, 24);
+            this.cboxSatiVrijemeDolaska.TabIndex = 17;
+            // 
+            // cboxMinuteVrijemeDolaska
+            // 
+            this.cboxMinuteVrijemeDolaska.FormattingEnabled = true;
+            this.cboxMinuteVrijemeDolaska.Items.AddRange(new object[] {
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.cboxMinuteVrijemeDolaska.Location = new System.Drawing.Point(468, 355);
+            this.cboxMinuteVrijemeDolaska.Name = "cboxMinuteVrijemeDolaska";
+            this.cboxMinuteVrijemeDolaska.Size = new System.Drawing.Size(79, 24);
+            this.cboxMinuteVrijemeDolaska.TabIndex = 18;
             // 
             // FrmDodajLiniju
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 539);
-            this.Controls.Add(this.txtVrijemeDolaska);
-            this.Controls.Add(this.txtVrijemePolaska);
+            this.Controls.Add(this.cboxMinuteVrijemeDolaska);
+            this.Controls.Add(this.cboxSatiVrijemeDolaska);
+            this.Controls.Add(this.cboxMinuteVrijemePolaska);
+            this.Controls.Add(this.cboxSatiVrijemePolaska);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodajLiniju);
             this.Controls.Add(this.txtOdrediste);
@@ -179,7 +380,9 @@
         private System.Windows.Forms.TextBox txtOdrediste;
         private System.Windows.Forms.Button btnDodajLiniju;
         private System.Windows.Forms.Button btnOdustani;
-        private System.Windows.Forms.TextBox txtVrijemePolaska;
-        private System.Windows.Forms.TextBox txtVrijemeDolaska;
+        private System.Windows.Forms.ComboBox cboxSatiVrijemePolaska;
+        private System.Windows.Forms.ComboBox cboxMinuteVrijemePolaska;
+        private System.Windows.Forms.ComboBox cboxSatiVrijemeDolaska;
+        private System.Windows.Forms.ComboBox cboxMinuteVrijemeDolaska;
     }
 }

@@ -54,18 +54,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(194, 231);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label1.Location = new System.Drawing.Point(180, 231);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 16);
+            this.label1.Size = new System.Drawing.Size(126, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Korisničko ime";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(194, 306);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label2.Location = new System.Drawing.Point(180, 303);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 16);
+            this.label2.Size = new System.Drawing.Size(71, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Lozinka";
             // 
@@ -82,9 +84,10 @@
             // 
             // btnPrijava
             // 
-            this.btnPrijava.Location = new System.Drawing.Point(424, 360);
+            this.btnPrijava.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.btnPrijava.Location = new System.Drawing.Point(397, 355);
             this.btnPrijava.Name = "btnPrijava";
-            this.btnPrijava.Size = new System.Drawing.Size(88, 38);
+            this.btnPrijava.Size = new System.Drawing.Size(115, 44);
             this.btnPrijava.TabIndex = 5;
             this.btnPrijava.Text = "Prijava";
             this.btnPrijava.UseVisualStyleBackColor = true;
@@ -94,6 +97,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(733, 523);
             this.Controls.Add(this.btnPrijava);
             this.Controls.Add(this.label3);
