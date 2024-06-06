@@ -19,6 +19,11 @@ namespace BusWay
             InitializeComponent();
 
             this.dgvVozneLinije.CellContentClick += new DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            List <string> polazista = VoznaLinijaRepository.GetUniquePolazista();
+            for (int i = 0; i < polazista.Count; i++)
+            {
+                cboxPolaziste.Items.Add(polazista[i]);
+            }
         }
 
 

@@ -119,5 +119,22 @@ namespace BusWay.Repositories
             DB.CloseConnection();
         }
 
+        public static List<string> GetUniquePolazista()
+        {
+            List<string> uniquePolazista = new List<string>();
+
+            string sql = $"SELECT DISTINCT Polaziste FROM VozneLinije";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+
+            while (reader.Read())
+            {
+                string polaziste = reader["Polaziste"].ToString();
+                uniquePolazista.Add(polaziste);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return uniquePolazista;
+        }
     }
 }

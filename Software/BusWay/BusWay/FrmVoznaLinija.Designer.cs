@@ -115,12 +115,6 @@
             // cboxPolaziste
             // 
             this.cboxPolaziste.FormattingEnabled = true;
-            this.cboxPolaziste.Items.AddRange(new object[] {
-            "Varaždin",
-            "Donji Kneginec",
-            "Gojanec",
-            "Zbelava",
-            ""});
             this.cboxPolaziste.Location = new System.Drawing.Point(211, 740);
             this.cboxPolaziste.Name = "cboxPolaziste";
             this.cboxPolaziste.Size = new System.Drawing.Size(194, 24);
