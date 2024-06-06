@@ -58,9 +58,9 @@
             // 
             this.brnPromjeni.BackColor = System.Drawing.Color.LightBlue;
             this.brnPromjeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.brnPromjeni.Location = new System.Drawing.Point(762, 723);
+            this.brnPromjeni.Location = new System.Drawing.Point(746, 715);
             this.brnPromjeni.Name = "brnPromjeni";
-            this.brnPromjeni.Size = new System.Drawing.Size(156, 53);
+            this.brnPromjeni.Size = new System.Drawing.Size(172, 68);
             this.brnPromjeni.TabIndex = 1;
             this.brnPromjeni.Text = "Promjeni liniju";
             this.brnPromjeni.UseVisualStyleBackColor = false;
@@ -70,9 +70,9 @@
             // 
             this.btnDodaj.BackColor = System.Drawing.Color.MediumAquamarine;
             this.btnDodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnDodaj.Location = new System.Drawing.Point(924, 723);
+            this.btnDodaj.Location = new System.Drawing.Point(924, 715);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(161, 53);
+            this.btnDodaj.Size = new System.Drawing.Size(172, 68);
             this.btnDodaj.TabIndex = 2;
             this.btnDodaj.Text = "Dodaj liniju";
             this.btnDodaj.UseVisualStyleBackColor = false;
@@ -82,9 +82,9 @@
             // 
             this.btnObrisi.BackColor = System.Drawing.Color.LightCoral;
             this.btnObrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnObrisi.Location = new System.Drawing.Point(595, 723);
+            this.btnObrisi.Location = new System.Drawing.Point(560, 715);
             this.btnObrisi.Name = "btnObrisi";
-            this.btnObrisi.Size = new System.Drawing.Size(161, 53);
+            this.btnObrisi.Size = new System.Drawing.Size(180, 68);
             this.btnObrisi.TabIndex = 3;
             this.btnObrisi.Text = "Obriši liniju";
             this.btnObrisi.UseVisualStyleBackColor = false;
@@ -104,9 +104,9 @@
             // 
             this.btnPrikaziSveLinije.BackColor = System.Drawing.Color.OldLace;
             this.btnPrikaziSveLinije.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnPrikaziSveLinije.Location = new System.Drawing.Point(893, 92);
+            this.btnPrikaziSveLinije.Location = new System.Drawing.Point(874, 80);
             this.btnPrikaziSveLinije.Name = "btnPrikaziSveLinije";
-            this.btnPrikaziSveLinije.Size = new System.Drawing.Size(185, 40);
+            this.btnPrikaziSveLinije.Size = new System.Drawing.Size(204, 52);
             this.btnPrikaziSveLinije.TabIndex = 7;
             this.btnPrikaziSveLinije.Text = "Prikaži sve linije";
             this.btnPrikaziSveLinije.UseVisualStyleBackColor = false;
@@ -152,7 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(1108, 784);
+            this.ClientSize = new System.Drawing.Size(1114, 794);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboxPolaziste);

@@ -27,28 +27,36 @@ namespace BusWay
 
         private void btnDodajLiniju_Click(object sender, EventArgs e)
         {
-            int minPolaska = Int32.Parse(cboxMinuteVrijemePolaska.Text);
-            int minDolaska = Int32.Parse(cboxMinuteVrijemeDolaska.Text);
-            int hPolaska = Int32.Parse(cboxSatiVrijemePolaska.Text);
-            int hDolaska = Int32.Parse(cboxSatiVrijemeDolaska.Text);
+            int minPolaska;
+            int minDolaska;
+            int hPolaska;
+            int hDolaska;
+
             if (string.IsNullOrEmpty(txtId.Text) || string.IsNullOrEmpty(txtOdrediste.Text) || string.IsNullOrEmpty(txtPolaziste.Text) ||
-                string.IsNullOrEmpty(cboxMinuteVrijemePolaska.Text) || string.IsNullOrEmpty(cboxMinuteVrijemeDolaska.Text) || 
+                string.IsNullOrEmpty(cboxMinuteVrijemePolaska.Text) || string.IsNullOrEmpty(cboxMinuteVrijemeDolaska.Text) ||
                 string.IsNullOrEmpty(cboxSatiVrijemeDolaska.Text) ||
                 string.IsNullOrEmpty(cboxSatiVrijemePolaska.Text))
             {
                 MessageBox.Show("Niste unijeli sve podatke!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (!(minPolaska >= 0 && minPolaska <= 59 &&
-                    minDolaska >= 0 && minDolaska <= 59 &&
-                    hPolaska >= 0 && hPolaska <= 23 &&
-                    hDolaska >= 0 && hDolaska <= 23))
-            {
-                MessageBox.Show("Niste unijeli ispravne vrijednosti za sate ili minute!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
             else
             {
                 try
                 {
+                    minPolaska = Int32.Parse(cboxMinuteVrijemePolaska.Text);
+                    minDolaska = Int32.Parse(cboxMinuteVrijemeDolaska.Text);
+                    hPolaska = Int32.Parse(cboxSatiVrijemePolaska.Text);
+                    hDolaska = Int32.Parse(cboxSatiVrijemeDolaska.Text);
+
+                    if (!(minPolaska >= 0 && minPolaska <= 59 &&
+                          minDolaska >= 0 && minDolaska <= 59 &&
+                          hPolaska >= 0 && hPolaska <= 23 &&
+                          hDolaska >= 0 && hDolaska <= 23))
+                    {
+                        MessageBox.Show("Raspon vrijednosti je kriv (sati:0-24, minute:0-59)!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
                     int id = int.Parse(txtId.Text);
                     VoznaLinija novaVoznaLinija = new VoznaLinija()
                     {
@@ -65,15 +73,19 @@ namespace BusWay
                     MessageBox.Show("Nova vozna linija kreirana!", "Kreirana linija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Kod vremenskih vrijednosti možete unijeti samo brojeve!", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 catch (Exception ex)
                 {
-                    if (ex is SqlException && ((SqlException)ex).Number == 2627) 
+                    if (ex is SqlException && ((SqlException)ex).Number == 2627)
                     {
                         MessageBox.Show("ID već postoji u bazi podataka!", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     else
                     {
-                        MessageBox.Show("Dogodila se greška prilikom dodavanja vozne linije:\n" + ex.Message, "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Linija nije stvorena!\n" + ex.Message, "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }

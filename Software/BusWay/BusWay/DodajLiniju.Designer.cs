@@ -123,7 +123,7 @@
             this.btnDodajLiniju.Name = "btnDodajLiniju";
             this.btnDodajLiniju.Size = new System.Drawing.Size(113, 35);
             this.btnDodajLiniju.TabIndex = 11;
-            this.btnDodajLiniju.Text = "Dodaj";
+            this.btnDodajLiniju.Text = "Stvori";
             this.btnDodajLiniju.UseVisualStyleBackColor = true;
             this.btnDodajLiniju.Click += new System.EventHandler(this.btnDodajLiniju_Click);
             // 
@@ -346,7 +346,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(103, 53);
+            this.label6.Location = new System.Drawing.Point(116, 56);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(502, 62);
             this.label6.TabIndex = 19;
