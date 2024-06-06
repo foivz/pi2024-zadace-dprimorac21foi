@@ -2,7 +2,7 @@
 
 Username | Lozinka|
 -------- |--------|
-Dino     | Foi    |
+admin    | admin   |
 
 
 # Sustav upravljanja gradskim prijevozom putnika (BusWay)
