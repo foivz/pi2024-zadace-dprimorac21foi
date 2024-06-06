@@ -106,7 +106,17 @@ namespace BusWay.Repositories
 
         public static void AzurirajVoznuLiniju(VoznaLinija linija)
         {
-            
+            int id = linija.Id;
+            string odrediste = linija.Odrediste;
+            string polaziste = linija.Polaziste;
+            string vrijemePolaska = linija.VrijemePolaska;
+            string vrijemDolaska = linija.VrijemeDolaska;
+
+            string sql = $"UPDATE VozneLinije SET Odrediste = '{odrediste}', Polaziste = '{polaziste}', " +
+                $"VrijemePolaska = '{vrijemePolaska}', VrijemeDolaska = '{vrijemDolaska}' WHERE Id={id}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
         }
 
     }

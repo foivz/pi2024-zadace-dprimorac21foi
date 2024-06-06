@@ -77,7 +77,8 @@ namespace BusWay
         private void brnPromjeni_Click(object sender, EventArgs e)
         {
             var voznaLinija = dgvVozneLinije.CurrentRow.DataBoundItem as VoznaLinija;
-            //VoznaLinijaRepository.AzurirajVoznuLiniju(voznaLinija);
+            VoznaLinijaRepository.AzurirajVoznuLiniju(voznaLinija);
+            ShowVozneLinije();
         }
     }
 }
