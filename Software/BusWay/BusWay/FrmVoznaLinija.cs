@@ -59,8 +59,24 @@ namespace BusWay
 
         private void cboxPolaziste_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string polaziste = cboxPolaziste.Text;
+            if (polaziste == "")
+            {
+                ShowVozneLinije();
+            }
+            else
+            {
+                VoznaLinijaRepository.GetVoznaLinijaPolaziste(polaziste);
+                dgvVozneLinije.DataSource = VoznaLinijaRepository.GetVoznaLinijaPolaziste(polaziste);
+            }
             
             
+        }
+
+        private void brnPromjeni_Click(object sender, EventArgs e)
+        {
+            //var voznaLinija = dgvVozneLinije.CurrentRow.DataBoundItem as VoznaLinija;
+            //VoznaLinijaRepository.AzurirajLiniju(voznaLinija);
         }
     }
 }

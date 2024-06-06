@@ -88,7 +88,7 @@ namespace BusWay.Repositories
 
         public static List<VoznaLinija> GetVoznaLinijaPolaziste(string polaziste)
         {
-            List<VoznaLinija> vozneLinije = new List<VoznaLinija>();
+            List<VoznaLinija> vozneLinijePolaziste = new List<VoznaLinija>();
 
             string sql = $"SELECT * FROM VozneLinije WHERE Polaziste = '{polaziste}'";
             DB.OpenConnection();
@@ -97,11 +97,11 @@ namespace BusWay.Repositories
             while (reader.Read())
             {
                 VoznaLinija vozLinija = CreateObject(reader);
-                vozneLinije.Add(vozLinija);
+                vozneLinijePolaziste.Add(vozLinija);
             }
             reader.Close();
             DB.CloseConnection();
-            return vozneLinije;
+            return vozneLinijePolaziste;
         }
 
     }
