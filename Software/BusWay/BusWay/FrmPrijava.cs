@@ -1,4 +1,5 @@
-﻿using DBLayer;
+﻿using BusWay.Repositories;
+using DBLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,8 +20,6 @@ namespace BusWay
             InitializeComponent();
             DB.SetConfiguration("PI2324_dprimorac21_DB", "PI2324_dprimorac21_User", "N:=yp!NO");
         }
-        string korIme = "D";
-        string lozinka = "D";
 
         private void btnPrijava_Click(object sender, EventArgs e)
         {
@@ -36,22 +35,30 @@ namespace BusWay
             }
             else
             {
-                if (txtKorisnickoIme.Text == korIme && txtLozinka.Text == lozinka)
+                var korisnik = KorisnikRepozitorij.GetKorisnik(txtKorisnickoIme.Text);
+                if (korisnik != null)
                 {
-                    this.Hide();
-                    FrmVoznaLinija FormVoznaLinija = new FrmVoznaLinija();
-                    MessageBox.Show("Uspješna Prijava!", "Dobrodošli!",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    FormVoznaLinija.ShowDialog();
-
+                    if (txtLozinka.Text == korisnik.Lozinka)
+                    {
+                        FrmVoznaLinija frmVoznaLinija = new FrmVoznaLinija();
+                        Hide();
+                        frmVoznaLinija.ShowDialog();
+                        Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Kriva lozinka!", "Problem", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Krivi podaci!", "Problem", MessageBoxButtons.OK,
+                    MessageBox.Show("Korisnik sa korisničkim imenom " + txtKorisnickoIme.Text + " nije pronađen!", "Problem", MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
                 }
             }
         }
+    
 
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -65,6 +72,11 @@ namespace BusWay
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

@@ -95,5 +95,13 @@ namespace BusWay
             ShowVozneLinije();
             FiltriranjePolazista();
         }
+
+        private void btnOdjava_Click(object sender, EventArgs e)
+        {
+            FrmPrijava frmprijava = new FrmPrijava();
+            Hide();
+            frmprijava.ShowDialog();
+            Close();
+        }
     }
 }

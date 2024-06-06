@@ -43,6 +43,8 @@
             this.cboxSatiVrijemeDolaska = new System.Windows.Forms.ComboBox();
             this.cboxMinuteVrijemeDolaska = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -337,7 +339,7 @@
             "57",
             "58",
             "59"});
-            this.cboxMinuteVrijemeDolaska.Location = new System.Drawing.Point(463, 383);
+            this.cboxMinuteVrijemeDolaska.Location = new System.Drawing.Point(463, 380);
             this.cboxMinuteVrijemeDolaska.Name = "cboxMinuteVrijemeDolaska";
             this.cboxMinuteVrijemeDolaska.Size = new System.Drawing.Size(79, 24);
             this.cboxMinuteVrijemeDolaska.TabIndex = 18;
@@ -353,11 +355,34 @@
             this.label6.Text = "Stvaranje nove linije";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label7.Location = new System.Drawing.Point(437, 325);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(15, 22);
+            this.label7.TabIndex = 20;
+            this.label7.Text = ":";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label8.Location = new System.Drawing.Point(437, 381);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(15, 22);
+            this.label8.TabIndex = 21;
+            this.label8.Text = ":";
+            // 
             // FrmDodajLiniju
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(745, 539);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cboxMinuteVrijemeDolaska);
             this.Controls.Add(this.cboxSatiVrijemeDolaska);
@@ -398,5 +423,7 @@
         private System.Windows.Forms.ComboBox cboxSatiVrijemeDolaska;
         private System.Windows.Forms.ComboBox cboxMinuteVrijemeDolaska;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

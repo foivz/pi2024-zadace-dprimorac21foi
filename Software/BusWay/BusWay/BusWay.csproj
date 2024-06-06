@@ -50,18 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DodajLiniju.cs">
+    <Compile Include="FrmDodajLiniju.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DodajLiniju.Designer.cs">
-      <DependentUpon>DodajLiniju.cs</DependentUpon>
+    <Compile Include="FrmDodajLiniju.Designer.cs">
+      <DependentUpon>FrmDodajLiniju.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\VoznaLinija.cs" />
-    <Compile Include="Prijava.cs">
+    <Compile Include="FrmPrijava.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Prijava.Designer.cs">
-      <DependentUpon>Prijava.cs</DependentUpon>
+    <Compile Include="FrmPrijava.Designer.cs">
+      <DependentUpon>FrmPrijava.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmVoznaLinija.cs">
       <SubType>Form</SubType>
@@ -71,12 +72,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\KorisnikRepozitorij.cs" />
     <Compile Include="Repositories\VoznaLinijaRepository.cs" />
-    <EmbeddedResource Include="DodajLiniju.resx">
-      <DependentUpon>DodajLiniju.cs</DependentUpon>
+    <EmbeddedResource Include="FrmDodajLiniju.resx">
+      <DependentUpon>FrmDodajLiniju.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Prijava.resx">
-      <DependentUpon>Prijava.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPrijava.resx">
+      <DependentUpon>FrmPrijava.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVoznaLinija.resx">
       <DependentUpon>FrmVoznaLinija.cs</DependentUpon>

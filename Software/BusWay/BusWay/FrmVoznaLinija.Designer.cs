@@ -37,6 +37,7 @@
             this.cboxPolaziste = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnOdjava = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVozneLinije)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +59,7 @@
             // 
             this.brnPromjeni.BackColor = System.Drawing.Color.LightBlue;
             this.brnPromjeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.brnPromjeni.Location = new System.Drawing.Point(746, 715);
+            this.brnPromjeni.Location = new System.Drawing.Point(720, 715);
             this.brnPromjeni.Name = "brnPromjeni";
             this.brnPromjeni.Size = new System.Drawing.Size(172, 68);
             this.brnPromjeni.TabIndex = 1;
@@ -70,7 +71,7 @@
             // 
             this.btnDodaj.BackColor = System.Drawing.Color.MediumAquamarine;
             this.btnDodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnDodaj.Location = new System.Drawing.Point(924, 715);
+            this.btnDodaj.Location = new System.Drawing.Point(909, 715);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(172, 68);
             this.btnDodaj.TabIndex = 2;
@@ -82,7 +83,7 @@
             // 
             this.btnObrisi.BackColor = System.Drawing.Color.LightCoral;
             this.btnObrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnObrisi.Location = new System.Drawing.Point(560, 715);
+            this.btnObrisi.Location = new System.Drawing.Point(517, 714);
             this.btnObrisi.Name = "btnObrisi";
             this.btnObrisi.Size = new System.Drawing.Size(180, 68);
             this.btnObrisi.TabIndex = 3;
@@ -141,12 +142,24 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // btnOdjava
+            // 
+            this.btnOdjava.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnOdjava.Location = new System.Drawing.Point(650, 82);
+            this.btnOdjava.Name = "btnOdjava";
+            this.btnOdjava.Size = new System.Drawing.Size(204, 50);
+            this.btnOdjava.TabIndex = 11;
+            this.btnOdjava.Text = "Odjava";
+            this.btnOdjava.UseVisualStyleBackColor = true;
+            this.btnOdjava.Click += new System.EventHandler(this.btnOdjava_Click);
+            // 
             // FrmVoznaLinija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(1114, 794);
+            this.Controls.Add(this.btnOdjava);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboxPolaziste);
@@ -157,6 +170,7 @@
             this.Controls.Add(this.brnPromjeni);
             this.Controls.Add(this.dgvVozneLinije);
             this.Name = "FrmVoznaLinija";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmVoznaLinija";
             this.Load += new System.EventHandler(this.FrmVoznaLinija_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVozneLinije)).EndInit();
@@ -177,5 +191,6 @@
         private System.Windows.Forms.ComboBox cboxPolaziste;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnOdjava;
     }
 }
